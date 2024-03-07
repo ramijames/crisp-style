@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Template</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      font-family: "Noto Sans", sans-serif;
+      font-optical-sizing: auto;
+    }
+
+    .main-header {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .section-header {
+      font-size: clamp(1rem, 0.23vw + 0.94rem, 1.13rem);
+      margin-bottom: clamp(1rem, 0.23vw + 0.94rem, 1.13rem);
+      padding-bottom: clamp(1rem, 0.23vw + 0.94rem, 1.13rem);
+      border-bottom: 1px solid #00000046;
+      text-transform: uppercase;
+    }
+
+    .main-content {
+      text-align: center;
+      font-size: clamp(1.25rem, 0.45vw + 1.14rem, 1.5rem);
+    }
+  </style>
+  <body class="p-6">
+    <!-- <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav> -->
+
+    <main class="container">
+      <section class="content">
+        <h1 class="main-header">Crisp Style</h1>
+        <p class="main-content">
+          <a href="https://www.npmjs.com/package/crisp-style">Crisp style</a> is
+          a simple, clean, and functional set of styles which will get your
+          project up and running quickly.
+        </p>
+
+        <p
+          class="p-2 m-t-2 m-b-2 code bg-stone b-1 r-1 b-color-cement t-center"
+        >
+          npm install crisp-style
+        </p>
+      </section>
+
+      <section class="content">
+        <h1 class="section-header">Typography</h1>
+        <p>
+          Crisp's typography is based on a clamp system which allows it to scale
+          gracefully from handheld devices up to large screens.
+        </p>
+        <div class="card m-t-2 m-b-2 code bg-white b-1 r-1 b-color-stone">
+          <div class="card-title">Headings</div>
+          <div class="card-content">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+          </div>
+        </div>
+        <small>Small text</small>
+
+        <p>Unordered List</p>
+        <ul>
+          <li>Web Design</li>
+          <li>Graphic Design</li>
+          <li>Mobile App Development</li>
+        </ul>
+      </section>
+
+      <section class="content">
+        <h2>Services</h2>
+        <ul>
+          <li>Web Design</li>
+          <li>Graphic Design</li>
+          <li>Mobile App Development</li>
+        </ul>
+      </section>
+
+      <section class="content">
+        <h2>Form</h2>
+        <form>
+          <label for="name">Label:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- <footer>
+      <p>&copy; Example Template. All rights reserved.</p>
+    </footer> -->
+  </body>
+</html>

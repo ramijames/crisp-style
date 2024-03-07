@@ -1,0 +1,16 @@
+{
+  "name": "crisp-style",
+  "version": "1.0.0",
+  "description": "A set of easy to use styles for building small applications. These are crisp, sharp, and modern.",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Styles",
+    "css",
+    "stylesheet"
+  ],
+  "author": "Rami James",
+  "license": "MIT"
+}

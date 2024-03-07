@@ -1,0 +1,441 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-asphalt: #333333;
+  --color-cement: #c5c5c5;
+  --color-stone: #ededed;
+  --color-red: #e34f3b;
+  --color-green: #2ad84d;
+  --color-blue: #4657ef;
+  --color-orange: #f5a623;
+  --color-yellow: #fff64d;
+}
+
+/* Rounded */
+.r-1 {
+  border-radius: 0.25rem;
+}
+
+.r-2 {
+  border-radius: 0.5rem;
+}
+
+.r-3 {
+  border-radius: 0.75rem;
+}
+
+.r-4 {
+  border-radius: 1rem;
+}
+
+/* Padding */
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 1rem;
+}
+
+.p-4 {
+  padding: 2rem;
+}
+
+.p-5 {
+  padding: 4rem;
+}
+
+.p-6 {
+  padding: 8rem;
+}
+
+/* Margin */
+
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-3 {
+  margin: 1rem;
+}
+
+.m-4 {
+  margin: 2rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-t-1 {
+  margin-top: 0.25rem;
+}
+
+.m-t-2 {
+  margin-top: 0.5rem;
+}
+
+.m-t-3 {
+  margin-top: 1rem;
+}
+
+.m-t-4 {
+  margin-top: 2rem;
+}
+
+.m-t-5 {
+  margin-top: 4rem;
+}
+
+.m-b-1 {
+  margin-bottom: 0.25rem;
+}
+
+.m-b-2 {
+  margin-bottom: 0.5rem;
+}
+
+.m-b-3 {
+  margin-bottom: 1rem;
+}
+
+.m-b-4 {
+  margin-bottom: 2rem;
+}
+
+.m-b-5 {
+  margin-bottom: 4rem;
+}
+
+/* Borders */
+.b-1 {
+  border: 1px solid;
+}
+
+.b-2 {
+  border: 2px solid;
+}
+
+.b-3 {
+  border: 3px solid;
+}
+
+.b-4 {
+  border: 4px solid;
+}
+
+.b-8 {
+  border: 8px solid;
+}
+
+.b-color-black {
+  border-color: var(--color-black);
+}
+
+.b-color-asphalt {
+  border-color: var(--color-asphalt);
+}
+
+.b-color-cement {
+  border-color: var(--color-cement);
+}
+
+.b-color-stone {
+  border-color: var(--color-stone);
+}
+
+.b-color-red {
+  border-color: var(--color-red);
+}
+
+.b-color-green {
+  border-color: var(--color-green);
+}
+
+.b-color-blue {
+  border-color: var(--color-blue);
+}
+
+.b-color-orange {
+  border-color: var(--color-orange);
+}
+
+.b-color-yellow {
+  border-color: var(--color-yellow);
+}
+
+/* Backgrounds */
+.bg-black {
+  background-color: var(--color-black);
+}
+
+.bg-asphalt {
+  background-color: var(--color-asphalt);
+}
+
+.bg-cement {
+  background-color: var(--color-cement);
+}
+
+.bg-stone {
+  background-color: var(--color-stone);
+}
+
+.bg-red {
+  background-color: var(--color-red);
+}
+
+.bg-green {
+  background-color: var(--color-green);
+}
+
+.bg-blue {
+  background-color: var(--color-blue);
+}
+
+.bg-orange {
+  background-color: var(--color-orange);
+}
+
+.bg-yellow {
+  background-color: var(--color-yellow);
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
+
+/* Code */
+.code {
+  font-family: monospace;
+}
+
+.code-big {
+  text-align: center;
+}
+
+/* Inputs */
+
+/* Buttons */
+
+/* Layout */
+
+/* Typography */
+.t-center {
+  text-align: center;
+}
+
+.t-left {
+  text-align: left;
+}
+
+.t-right {
+  text-align: right;
+}
+
+/* Fluid font size variables, for browsers that support clamp */
+@supports (font-size: clamp(1rem, 1vw, 1rem)) {
+  :root {
+    --crisp-sm: clamp(0.8rem, 0.08vw + 0.78rem, 0.84rem);
+    --crisp-base: clamp(1rem, 0.23vw + 0.94rem, 1.13rem);
+    --crisp-md: clamp(1.25rem, 0.45vw + 1.14rem, 1.5rem);
+    --crisp-lg: clamp(1.56rem, 0.79vw + 1.36rem, 2rem);
+    --crisp-xl: clamp(1.95rem, 1.29vw + 1.63rem, 2.66rem);
+    --crisp-xxl: clamp(2.44rem, 2.02vw + 1.94rem, 3.55rem);
+    --crisp-xxxl: clamp(3.05rem, 3.06vw + 2.29rem, 4.73rem);
+  }
+}
+/* Fallback variables for browsers that don't support clamp */
+@supports not (font-size: clamp(1rem, 1vw, 1rem)) {
+  :root {
+    --crisp-sm: 0.8rem;
+    --crisp-base: 1rem;
+    --crisp-md: 1.25rem;
+    --crisp-lg: 1.56rem;
+    --crisp-xl: 1.95rem;
+    --crisp-xxl: 2.44rem;
+    --crisp-xxxl: 3.05rem;
+  }
+  @media screen and (min-width: 1280px) {
+    :root {
+      --crisp-sm: 0.84rem;
+      --crisp-base: 1.13rem;
+      --crisp-md: 1.5rem;
+      --crisp-lg: 2rem;
+      --crisp-xl: 2.66rem;
+      --crisp-xxl: 3.55rem;
+      --crisp-xxxl: 4.73rem;
+    }
+  }
+}
+
+html {
+  font-size: var(--crisp-base);
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: false;
+  line-height: 1.65;
+}
+
+p {
+  font-size: var(--crisp-base);
+  margin-bottom: var(--crisp-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: sans-serif;
+  font-weight: true;
+  line-height: 1.15;
+  margin-top: var(--crisp-base);
+  margin-bottom: var(--crisp-base);
+}
+
+h1,
+.text-size-h1 {
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  font-size: var(--crisp-xxxl);
+}
+
+h2,
+.text-size-h2 {
+  font-size: 2.44em;
+  font-size: var(--crisp-xxl);
+}
+
+h3,
+.text-size-h3 {
+  font-size: var(--crisp-xl);
+}
+
+h4,
+.text-size-h4 {
+  font-size: var(--crisp-lg);
+}
+
+h5,
+.text-size-h5 {
+  font-size: var(--crisp-md);
+}
+
+.text-caption {
+  font-size: 0.8em;
+}
+
+small,
+.text-small {
+  font-size: var(--crisp-sm);
+  margin-bottom: var(--crisp-sm);
+}
+
+/* Lists */
+ul {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 1rem;
+}
+
+/* Inputs and form elements */
+
+/* Buttons */
+
+/* Layout */
+
+/* * {
+  border: 1px solid red;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100vh;
+  align-items: center;
+}
+
+.container > section {
+  margin-bottom: 3em;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 80vw;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+/* Elements */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: var(--crisp-sm);
+  font-weight: bold;
+  margin-bottom: var(--crisp-md);
+  border-bottom: 1px solid var(--color-stone);
+  text-transform: uppercase;
+  padding: 0.25rem 1rem;
+  color: var(--color-cement);
+}
+
+.card-content {
+  padding: 1rem;
+}
